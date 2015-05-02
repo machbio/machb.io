@@ -19,3 +19,4 @@ six==1.8.0
 tornado==4.0.2
 webassets==0.10.1
 wsgiref==0.1.2
+pelican_gist==0.3.2

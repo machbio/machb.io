@@ -5,7 +5,7 @@ AUTHOR = u'Sandeep Shantharam'
 SITENAME = u'MachBio'
 EMAIL_ADDRESS = u'machbio@gmail.com'
 SITEURL = 'http://machb.io'
-TIMEZONE = 'America/Indianapolis'
+TIMEZONE = 'America/Indiana/Indianapolis'
 THEME = 'void/'
 AVATAR = '/theme/images/avatar.jpg'
 TITLE = " Sandeep Shantharam : Bioinformatics Student with Interests \
@@ -36,7 +36,8 @@ TAG_FEED_ATOM = "feeds/tag/%s.atom.xml"
 
 # PLUGINS
 PLUGIN_PATHS = ['pelican-plugins', 'pelican_dynamic']
-PLUGINS = ['assets', 'liquid_tags.notebook', 'pelican_dynamic', 'render_math']
+PLUGINS = ['assets', 'liquid_tags.notebook', 'pelican_dynamic', 'render_math', \
+			'neighbors', 'pelican_gist']
 
 CODE_DIR = 'code'
 NOTEBOOK_DIR = 'notebooks'
@@ -66,3 +67,15 @@ DOMAIN = "machb.io"
 MAILCHIMP = False
 CACHE_CONTENT = False
 AUTORELOAD_IGNORE_CACHE = True
+DISQUS_SITENAME = "machbio"
+
+
+RELATIVE_URLS = True
+#TAG_URL = 'tags/tag-{slug}.html'
+#TAG_SAVE_AS = 'tags/tag-{slug}.html'
+TAGS_URL = 'tags.html'
+TAGS_SAVE_AS = 'tags.html'
+#ARCHIVES_URL = 'archives.html'
+#ARCHIVES_SAVE_AS = 'archives.html'
+CATEGORY_URL = 'category/{slug}.html'
+CATEGORY_SAVE_AS = 'category/{slug}.html'
