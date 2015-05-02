@@ -44,6 +44,7 @@ EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 
 STATIC_PATHS = ['images', 'code', 'notebooks', 'extra']
 EXTRA_PATH_METADATA = {'extra/robots.txt': {'path': 'robots.txt'},}
+MATH_JAX = {'color':'blue','align': 'center'}
 
 # TODO: NAVBAR - make it dynamic
 NAVIGATION = [
