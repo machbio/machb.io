@@ -37,7 +37,7 @@ TAG_FEED_ATOM = "feeds/tag/%s.atom.xml"
 # PLUGINS
 PLUGIN_PATHS = ['pelican-plugins', 'pelican_dynamic']
 PLUGINS = ['assets', 'liquid_tags.notebook', 'pelican_dynamic', 'render_math', \
-			'neighbors', 'pelican_gist']
+			'neighbors', 'pelican_gist', 'tipue_search']
 
 CODE_DIR = 'code'
 NOTEBOOK_DIR = 'notebooks'
@@ -69,7 +69,6 @@ CACHE_CONTENT = False
 AUTORELOAD_IGNORE_CACHE = True
 DISQUS_SITENAME = "machbio"
 
-
 RELATIVE_URLS = True
 #TAG_URL = 'tags/tag-{slug}.html'
 #TAG_SAVE_AS = 'tags/tag-{slug}.html'
@@ -79,3 +78,6 @@ TAGS_SAVE_AS = 'tags.html'
 #ARCHIVES_SAVE_AS = 'archives.html'
 CATEGORY_URL = 'category/{slug}.html'
 CATEGORY_SAVE_AS = 'category/{slug}.html'
+
+# Tipue Search
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'authors', 'archives', 'search'))

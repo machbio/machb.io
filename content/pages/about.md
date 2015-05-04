@@ -13,6 +13,7 @@ I'm Sandeep Shantharam, a graduate student from Indiana University majoring in B
 <center>
 <span><a href="http://www.wolframalpha.com/input/?i=x3%E2%88%9267066x2%2B55814648x%E2%88%923578744960%3D0"><i class="fa fa-phone-square fa-2x"></i></a>&nbsp;&nbsp;&nbsp;$x^3-67066x^2+55814648x-3578744960=0$&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Area_code_707"><i class="fa fa-mobile"></i></a></span>
 <center>
+
 <hr class=“small”>
 ## Press
 [Indiana Student Develops Flu Forecast App for Smartphones ](http://www.insideindianabusiness.com/life-sciences.asp?ID=5604&Detail=True)

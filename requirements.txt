@@ -20,3 +20,4 @@ tornado==4.0.2
 webassets==0.10.1
 wsgiref==0.1.2
 pelican_gist==0.3.2
+beautifulsoup4=4.3.2
