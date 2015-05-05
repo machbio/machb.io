@@ -37,7 +37,7 @@ TAG_FEED_ATOM = "feeds/tag/%s.atom.xml"
 # PLUGINS
 PLUGIN_PATHS = ['pelican-plugins', 'pelican_dynamic']
 PLUGINS = ['assets', 'liquid_tags.notebook', 'pelican_dynamic', 'render_math', \
-			'neighbors', 'pelican_gist', 'tipue_search']
+			'neighbors', 'pelican_gist', 'tipue_search', 'sitemap']
 
 CODE_DIR = 'code'
 NOTEBOOK_DIR = 'notebooks'
@@ -81,3 +81,18 @@ CATEGORY_SAVE_AS = 'category/{slug}.html'
 
 # Tipue Search
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'authors', 'archives', 'search'))
+
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
