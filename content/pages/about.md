@@ -29,7 +29,7 @@ I'm Sandeep Shantharam, a graduate student from Indiana University majoring in B
 ## Projects
 [FluCast - Risk Assesment and Forecast of Seasonal flu in real time](http://soic.iupui.edu/news/bioinformatics-student-develops-app-to-forecast-the-flu/)
 
-- Pacific Northwest National Laboratory, Richlan, WA, USA [[Video](https://youtu.be/AVvk_xHp4Tg)] [[Slides](http://www.slideshare.net/machbio/android-team-onefinal30)]
+- Pacific Northwest National Laboratory, Richland, WA, USA [[Video](https://youtu.be/AVvk_xHp4Tg)] [[Slides](http://www.slideshare.net/machbio/android-team-onefinal30)]
 
 <hr class=“small”>
 

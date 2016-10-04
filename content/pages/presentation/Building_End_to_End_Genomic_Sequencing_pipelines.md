@@ -80,7 +80,7 @@ Theme: moon
 
     <section>
 	    <section>
-	    	<h3>Syllable Imaging Data</h3>
+	    	<h3>Syllable Mouse Imaging Data</h3>
 			<iframe width="853" height="480" src="https://www.youtube.com/embed/Yl6qLbiEA_U?start=49&end=85&rel=0" frameborder="0" allowfullscreen></iframe>
 	    </section>
 	    <section>
@@ -101,7 +101,32 @@ Theme: moon
     <section>
 	    <section>
 	    	<h3>C Level Performance in Python</h3>
+	    	<li>Rules/Process in NGS Pipelines</li>
+	    	<li>Enrichment Calculation in Network Navigator</li>
 	    </section>
+	    <section>
+	    	<h3>Pairwise Distance Function</h3>
+	    	<p>will take an array representing M points in N dimensions, and return the M x M matrix of pairwise distances</p>
+	    	from <a href="https://jakevdp.github.io/blog/2013/06/15/numba-vs-cython-take-2/">Numba vs. Cython: Take 2</a>
+	    	<pre>
+	    		<code>
+	    			import numpy as np
+					X = np.random.random((10000, 3))
+	    		</code>
+	    	</pre>
+	    </section>
+	    <section>
+	    	<h3>Pure Python Implementation</h3>
+	    	<img src="/extra/Python.png" />
+	    </section>
+	   	<section>
+	    	<h3>Cython Implementation</h3>
+	    	<img src="/extra/Cython.png" />	    	
+	    </section>
+	    <section>
+	    	<h3>Numba Implementation</h3>
+	    	<img src="/extra/Numba.png" />	    	
+	    </section>	    
     </section>
 
 	<section>
