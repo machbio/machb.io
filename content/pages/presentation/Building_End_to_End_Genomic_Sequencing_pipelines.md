@@ -18,7 +18,7 @@ Theme: moon
         <section>
         	<h1>Overview</h1>
         	<ul>
-        		<li>Building Next Generation Sequencing Pipelines</li>
+        		<li>Building NGS Pipeline Framework</li>
         		<li>Automating FASTQ file generation</li>
         		<li>Developing application to visualize network data</li>
         		<li>Building Data pipeline for 3D imaging data</li>
@@ -26,85 +26,144 @@ Theme: moon
         	</ul>
         </section>
     </section>
-
-
     <section>  
     	<section>
-    	<h3>Building Next Generation Sequencing Pipelines</h3>
+    	<h3>Building NGS Pipeline Framework</h3>
+    	<strong>Software Infrastructure that can manage execution of NGS Pipelines</strong>
+    	<ul align="left">
+	    	<li>Pipelines - GATK Variant Calling Pipeline and STAR-RSEM Pipeline</li>
+	    	<li>Multiple Genome Annotations across different species</li>
+    	</ul>
       	</section>
-
-      	<section>
-      	<h3>Challenges</h3>
-      	</section>      	
     	
     	<section>
-    		- Pipex is Biogen's answers to Seven Bridges' - it gives complete control of every aspect of running a pipeline.
-			- Pipex supports three execution system - Snakemake, Nextflow and ShadowFax(Internal), its a thin wrapper around the execution systems.
-			- Pipex has basic requirements from Execution systems to be able to Start, Stop and Log.
-			- Pipex supports jobs to be run on Internal Grid Engine.
-			- Pipex has been designed to work on Internal HPC Cluster, AWS Cfn Cluster and any Super Computing Facilities.
-			- Pipex works by recieving request from SEQR to run jobs , stop jobs and restart jobs.
-			- Pipex is Asynchronous tool meaning, you can simulatneously run many Pipelines.
-			- Pipex has strict version control system at the Pipeline versioning level, so high regard for reproducing the results.
-			- Future goal of Pipex to ease writing new Pipelines and provide flexibility to priortize the Pipeline runs.
-			- Pipex though has a single client (SEQR), additional CLI tools could be built to run Pipelines from Command Line.
-      	</section>
-
-       	<section>
-      	</section>
-      	
-      	<section>
-      	<h2>Evaluation of Workflow Managers</h2>
-      	<p>
-      	<li>Ability to re-run after failed runs.</li>
-      	<li></li>
-      	</p>
-      	</section>
-      	
-      	<section>
-      	Snakemake
-      	</section>
-       	<section>
-       	Nextflow
+      	<h3>Challenges</h3>
+    	<ul align="left">
+      		<li>COTS did not provide API access to their platforms</li>
+      		<li>Limited to RNA-Sequencing Pipelines, while DNA-Sequencing Pipeline data was too large</li>
+      		<li>Pipeline Versioning</li>
+      		<li>OpenSource Solutions has assumptions</li>
+      	</ul>
       	</section>
 
       	<section>
+      	<h3>Evaluation of Workflow Managers</h3>
+    	<ul align="left">
+	      	<li>large active community around the workflow manager</li>
+	      	<li>can handle non-linear pipelines</li>
+	      	<li>has comprehensive logging system</li>
+	      	<li>completely configurable algorithm parameters</li>
+	      	<li>re-run after failed runs,from the last successful step</li>
+	    </ul>
+	  	<u><strong>Snakemake and Nextflow</strong></u>
+      	</section>
+
+       	<section>
+    		<h3>Pipex</h3>
+	    	<ul align="left">
+	    		<li>Asynchronous Web Server to handle NGS pipeline</li>
+				<li>Supports Snakemake, Nextflow and ShadowFax(Internal), its a thin wrapper around the execution systems</li>
+				<li>Works on Internal HPC Cluster, AWS CfnCluster and Super Computing Facilities</li>
+				<li>Webapp and Command Line tool to run, stop or restart pipelines</li>
+	    	</ul>
+      	</section>
+      	
+      	<section>Pipex Overview Diagram</section>
+      	<section>Pipex Simplified DataFlow</section>
+
+      	<section>
+      	<h2>Snakemake</h2>
+       	<div align="left">
+      	<h3>Pros</h3>
+	       	<ul align="left">
+	       	<li>Large Community of Bioinformaticians</li>
+	       	<li>Suited for Large Pipelines</li>
+	       	<li>Make based workflow</li>
+	       	</ul>      	
+      	<h3>Cons</h3>
+	       	<ul align="left">
+	       	<li>No Docker Support</li>
+	       	<li>No Environment Modules</li>
+	       	<li>Excellent Cleanup Process</li>
+	       	</ul>      	      
+       	</div>	
+      	</section>
+       	<section>
+       	<h2>Nextflow</h2>
+       	
+       	<div align="left">
+       	<h3>Pros</h3>
+	       	<ul align="left">
+	       	<li>Docker Support</li>
+	       	<li>Slurm used in Supercomputing facilities</li>
+	       	<li>Environment Variables Control</li>
+	       	<li>Configuration profiles</li>
+	       	<li>Built in Environment Modules Support</li>
+	       	</ul>
+       	<h3>Cons</h3>
+	       	<ul align="left">
+	       	<li>Groovy Language Syntax</li>
+	       	<li>JVM based memory issues</li>
+	       	</ul>       	
+       	</div>
+      	</section>
+
+      	<section>
+      	<h3>Benefits of NGS Pipeline Framework</h3>
+      	<div align="left">
+	      	<li>Effective Control over every aspect of Pipeline</li>
+	      	<li>Large Community of Pipelines</li>
+	      	<li>Customize Report generation</li>
+	      	<li>Save Money</li>
+      	</div>
       	</section>      	
     </section>
     
     <section>
     	<section>
     	<h3>Automating FastQ file Generation</h3>
+    	<strong>Processing of sequencer outputs into FASTQ files</strong>
+    	<ul align="left">
+	    	<li>De-multiplexing of Sample files into specific FASTQ Files</li>
+	    	<li>Quality Control metrics at multiple levels - Sample, Run and Device</li>
+	    	<li>Support for HiSeq, MiSeq, NextSeq</li>
+    	</ul>    	
       	</section>
 
       	<section>
       	<h3>Challenges</h3>
+      	<ul align="left">
+      		<li>Automation meant Standardization</li>
+      		<li>Internal Project vs External Project</li>
+      		<li>Important QC metrics for lab and computational biologists</li>
+      		<li>Utilizing Grid Engine Support</li>
+      	</ul>
       	</section>      	
-
-    	<section>
-			- Two Components of BiNGS - FASTQ Processing and Project ID generation.
-			- Project ID generation is created based on Issues/Tasks rquested from Computational Biology Group or Sequencing Lab.
-			- Project ID is created for data from both Internal and External Projects.
-			- Project ID is used in the SampleSheets for Sequencing Machines
-			- Project ID is used to Identify the location of FASTQ files and Post-Processed Data from Pipeline Runs
-			- Project IDs are generated using a Scheduler at Regular Intervals
-
-			- FASTQ Processing is supported for Hi-Seq Illumina Machines as of now, support both RNA and DNA Sequencing Samples.
-			- Based on the completion of dump from the Sequencing Machine and Availablilty of SampleSheet
-			- Utilizes the Grid Engine to process the BCL Files into FASTQ files.
-			- De-Multiplexing of Samples into Projects and Post-Processing QC metrics are also run on Grid Engine as individual jobs.
-			- Updates SEQR about the completion of processing of FASTQ Files - leading to Projects being available for running Pipelines.
-			- Future Support for other Sequencing Machines (MiSeQ and NextSeQ).
-			- Future Possibility of Integrating with Fulcrum Genomics folks for Run Folder Level QC metrics.
-			- FASTQ Processing is triggered based on various conditions and there are manual steps involved.
-      	</section>
-
-    	<section>
-      	</section>
 
        	<section>
-      	</section>      	
+    		<h3>BiNGS</h3>
+	    	<ul align="left">
+	    		<li>Command line application tool for automating primary processing</li>
+				<li>Quality Control Tools as part of the steps required</li>
+				<li>Adapter Trimming</li>
+				<li>Demultiplex and trigger QC pipelines</li>
+				<li>Trigger mechanism based on decision tree</li>
+				<li>Integrates with the Project Management Tool</li>
+	    	</ul>
+      	</section>
 
+      	<section>
+      		FASTQ processing Overview Diagram
+      	</section>
+
+    	<section>
+      	<h3>Benefits of Primary Processing Automation</h3>
+      	<div align="left">
+      		<li>QC metrics helpful and avoids unnecessary downstream processing</li>
+      		<li>Metadata leads to end-to-end Pipeline Processing</li>
+      		<li>Helping Lab folks to identify issues</li>
+      	</div>
+      	</section>
     </section>    
 
     <section>
@@ -135,7 +194,7 @@ Theme: moon
     		<h3>Requirements</h3>
     		<p>
 	    		<li>Ability to Visualize Large Networks - scaling on Nodes, Attributes and Edges.</li>
-	    		<li>Abilty to Filter, Search on different attributes. </li>
+	    		<li>Ability to Filter, Search on different attributes. </li>
 	    		<li>Perform Enrichment based on the different attributes.</li>
 	    		<li>Loading Internal and External data with regular updates.</li>
     		</p>
