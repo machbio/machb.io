@@ -77,7 +77,7 @@ Theme: moon
       		<img data-src="/extra/Pipex_Server.png">
       	</section>
       	<section>
-      		<h3>Pipex DataFlow</h3>
+      		<h3>Pipex Database</h3>
       		<img data-src="/extra/Pipex_Dataflow.png">
       	</section>
 
@@ -89,12 +89,12 @@ Theme: moon
 	       	<li>Large Community of Bioinformaticians</li>
 	       	<li>Suited for Large Pipelines</li>
 	       	<li>Make based workflow</li>
+	        <li>Excellent Cleanup Process</li>
 	       	</ul>      	
       	<h3>Cons</h3>
 	       	<ul align="left">
 	       	<li>No Docker Support</li>
 	       	<li>No Environment Modules</li>
-	       	<li>Excellent Cleanup Process</li>
 	       	</ul>      	      
        	</div>	
       	</section>
@@ -143,7 +143,7 @@ Theme: moon
       	<section>
       	<h3>Challenges</h3>
       	<ul align="left">
-      		<li>Automation meant Standardization</li>
+      		<li>Automation means Standardization</li>
       		<li>Internal Project vs External Project</li>
       		<li>Important QC metrics for lab and computational biologists</li>
       		<li>Utilizing Grid Engine Support</li>
