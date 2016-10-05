@@ -68,8 +68,18 @@ Theme: moon
 	    	</ul>
       	</section>
       	
-      	<section>Pipex Overview Diagram</section>
-      	<section>Pipex Simplified DataFlow</section>
+      	<section>
+      		<h3>Pipex Pipeline Version</h3>
+      		<img data-src="/extra/Pipex_Versions.png">
+      	</section>
+      	<section>
+      		<h3>Pipex Server Architecture</h3>
+      		<img data-src="/extra/Pipex_Server.png">
+      	</section>
+      	<section>
+      		<h3>Pipex DataFlow</h3>
+      		<img data-src="/extra/Pipex_Dataflow.png">
+      	</section>
 
       	<section>
       	<h2>Snakemake</h2>
@@ -153,7 +163,8 @@ Theme: moon
       	</section>
 
       	<section>
-      		FASTQ processing Overview Diagram
+      		<h3>BiNGS Process Flow</h3>
+      		<img data-src="/extra/Bings.png">
       	</section>
 
     	<section>
