@@ -14,16 +14,14 @@ install:
     - "pip install -r requirements.txt"
 script: "pelican content/"
 deploy:
-    provider: s3
-    access_key_id: $AWS_ACCESS_KEY # declared in Travis repo settings
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: machb.io
-    endpoint: machb.io.s3-website-us-east-1.amazonaws.com
-    region: us-east-1
-    skip_cleanup: true
-    local-dir: output
-    acl: public_read
-    detect_encoding: true
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local_dir: output
+  fqdn: machb.io
+  on:
+    branch: master
 notifications:
     email:
         on_failure: always
