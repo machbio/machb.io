@@ -57,7 +57,6 @@ TWITTER_CARDS = True
 TWITTER_NAME = "machbio"
 GITHUB_NAME = 'machbio'
 LINKEDIN_URL = 'http://linkedin.com/in/machbio'
-GOOGLE_PLUS_URL = 'https://plus.google.com/+SandeepShantharam?rel=author'
 
 #### Analytics
 #GOOGLE_ANALYTICS = ''
@@ -82,7 +81,6 @@ CATEGORY_SAVE_AS = 'category/{slug}.html'
 # Tipue Search
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'authors', 'archives', 'search'))
 
-TEMPLATE_PAGES = {'admin/index.html': 'admin/index.html'}
 
 SITEMAP = {
     'format': 'xml',
