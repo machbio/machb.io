@@ -83,7 +83,6 @@ CATEGORY_SAVE_AS = 'category/{slug}.html'
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'authors', 'archives', 'search'))
 
 TEMPLATE_PAGES = {'admin/index.html': 'admin/index.html'}
-STATIC_PATHS = ['uploads', 'admin']
 
 SITEMAP = {
     'format': 'xml',
