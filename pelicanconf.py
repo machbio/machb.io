@@ -19,6 +19,7 @@ ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
 # Static Pages
 PAGE_PATHS = ['pages']
+ARTICLE_EXCLUDES = ['admin']
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 #ABOUT_PAGE_HEADER = 'Nice to meet you.'
