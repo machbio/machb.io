@@ -2,7 +2,7 @@ backend:
   name: github
   repo: machbio/machb.io
   branch: master
-  site_domain: vigorous-keller-e4e5d5.netlify.com
+  site_domain: machbio.netlify.com
 
 media_folder: "content/uploads" # Folder where user uploaded files should go
 public_folder: "content"
