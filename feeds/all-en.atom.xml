@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MachBio</title><link href="http://machb.io/" rel="alternate"></link><link href="http://machb.io/feeds/all-en.atom.xml" rel="self"></link><id>http://machb.io/</id><updated>2019-09-14T02:52:04-04:00</updated><entry><title>Content Manager</title><link href="http://machb.io/2019/09/14/content-manager/" rel="alternate"></link><updated>2019-09-14T02:52:04-04:00</updated><author><name>Sandeep Shantharam</name></author><id>tag:machb.io,2019-09-14:2019/09/14/content-manager/</id><summary type="html">
-  &lt;!-- Include the script that builds the page and powers Netlify CMS --&gt;
-  &lt;script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"&gt;&lt;/script&gt;
-</summary></entry></feed>
